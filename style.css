@@ -1,0 +1,186 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f5f7;
+    margin: 0;
+    padding: 0;
+    color: #1d1d1f;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: linear-gradient(135deg, #2c2c2e, #3a3a3c);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: inherit;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    transition: background 0.3s, color 0.3s;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background: inherit;
+    color: inherit;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #0071e3;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s, color 0.3s;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.3s, color 0.3s;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-devolver {
+    background-color: #34c759;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-excluir {
+    background-color: #ff3b30;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.status {
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.status-retirada {
+    background-color: #ffcc00;
+    color: #1d1d1f;
+}
+
+.status-devolvida {
+    background-color: #34c759;
+    color: white;
+}
+
+
+/* BOTÃO DARK MODE */
+
+#toggleDark {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #0071e3;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* DARK MODE */
+
+body.dark {
+    background-color: #1c1c1e;
+    color: #f5f5f7;
+}
+
+body.dark form,
+body.dark table {
+    background: #2c2c2e;
+    color: #f5f5f7;
+}
+
+body.dark th {
+    background-color: #3a3a3c;
+}
+
+body.dark tr:hover {
+    background-color: #3a3a3c;
+}
+
+body.dark select,
+body.dark input {
+    border: 1px solid #555;
+    background: #3a3a3c;
+    color: #f5f5f7;
+}

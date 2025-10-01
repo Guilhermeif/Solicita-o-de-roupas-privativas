@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Roupas Privativas - Hospital Gizelda Trigueiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        Controle de roupas privativas
+        <button id="toggleDark">🌙 Escuro</button>
+    </header>
+
+    <main>
+        <h2>Registrar Retirada</h2>
+        <form id="formRegistro">
+            <label>Nome do Funcionário:</label>
+            <input type="text" id="nomeFuncionario" required>
+
+            <label>Cargo:</label>
+            <select id="cargo" required>
+        <option value="">Selecione</option>
+        <option>Médico</option>
+        <option>Enfermeiro</option>
+        <option>Técnico de Enfermagem</option>
+        <option>Fisioterapeuta</option>
+        <option>Nutricionista</option>
+        <option>Técnico de Nutrição</option>
+        <option>Psicólogo</option>
+        <option>Assistente Social</option>
+        <option>Auxiliar de Serviços Gerais</option>
+        <option>Auxiliar em Saúde</option>
+        <option>Auxiliar de Nutrição</option>
+        <option>Técnico de Radiologia</option>
+        <option>Técnico de Laboratório</option>
+        <option>Maqueiro</option>
+        <option>Técnico Administrativo</option>
+        <option>Outros</option>
+      </select>
+
+            <label>Setor:</label>
+            <select id="setor" required>
+        <option value="">Selecione</option>
+        <option>SAU</option>
+        <option>PS COVID</option>
+        <option>Misto 1</option>
+        <option>Misto 4</option>
+        <option>Misto 2</option>
+        <option>UTI</option>
+        <option>Tisiologia</option>
+        <option>Outros</option>
+      </select>
+
+            <button type="submit">Registrar Retirada</button>
+        </form>
+
+        <h2>Histórico</h2>
+        <table id="tabelaRegistros">
+            <thead>
+                <tr>
+                    <th>Funcionário</th>
+                    <th>Cargo</th>
+                    <th>Setor</th>
+                    <th>Roupa</th>
+                    <th>Status</th>
+                    <th>Horário Retirada</th>
+                    <th>Horário Devolução</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button class="btn-excluir" onclick="limparHistorico()">Excluir Histórico</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
